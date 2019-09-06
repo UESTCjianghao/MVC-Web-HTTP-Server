@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 编辑</title>
+</head>
+<body>
+    <h1>TODO 编辑</h1>
+    <form action="/todo/update" method="post">
+        <input type="text" name="id" value="{{todo_id}}" hidden>
+<!--        <input type="text" name="id">-->
+        <br>
+        <input type="text" name="title" value="{{todo_title}}">
+<!--        <input type="text" name="title">-->
+        <br>
+        <button type="submit">提交修改</button>
+    </form>
+</body>
+</html>

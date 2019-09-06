@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改 comment 的页面</title>
+</head>
+<body>
+    <h1>修改 comment</h1>
+    <form action="/comment/update" method="post">
+        <input hidden="hidden" name="comment_id" placeholder="weibo_id" value="{{ comment.id }}"></input>
+        <br>
+        <input name="content" placeholder="content" value="{{ comment.content }}"></input>
+        <br>
+        <button>提交修改</button>
+    </form>
+</body>
+</html>
